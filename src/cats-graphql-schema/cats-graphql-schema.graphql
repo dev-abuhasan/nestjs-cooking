@@ -1,0 +1,24 @@
+type CatsGraphqlSchema {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateCatsGraphqlSchemaInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateCatsGraphqlSchemaInput {
+  id: Int!
+}
+
+type Query {
+  catsGraphqlSchema: [CatsGraphqlSchema]!
+  catsGraphqlSchema(id: Int!): CatsGraphqlSchema
+}
+
+type Mutation {
+  createCatsGraphqlSchema(createCatsGraphqlSchemaInput: CreateCatsGraphqlSchemaInput!): CatsGraphqlSchema!
+  updateCatsGraphqlSchema(updateCatsGraphqlSchemaInput: UpdateCatsGraphqlSchemaInput!): CatsGraphqlSchema!
+  removeCatsGraphqlSchema(id: Int!): CatsGraphqlSchema
+}

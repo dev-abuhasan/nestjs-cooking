@@ -98,3 +98,25 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 # nestjs-cooking
+
+```
+npm i @nestjs/graphql @nestjs/microservices @nestjs/websockets
+
+npm install --save @nestjs/swagger
+
+nest g resource
+
+/**
+ERROR [PackageLoader] No driver (WebSockets) has been selected. In order to take advantage of the default driver, please, ensure to install the "@nestjs/platform-socket.io" package ($ npm install @nestjs/platform-socket.io).
+
+npm install @nestjs/platform-socket.io
+
+rm -rf node_modules package-lock.json
+npm install
+*/
+
+
+# GraphQl
+npm i @nestjs/graphql @nestjs/apollo @apollo/server graphql
+
+```
